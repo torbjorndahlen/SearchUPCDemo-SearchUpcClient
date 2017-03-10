@@ -1,4 +1,4 @@
-# Helloworld app
+# SearchUPC app
 ---------
 Author: Erik Jan de Wit   
 Level: Intermediate   
