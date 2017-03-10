@@ -1,6 +1,6 @@
 # SearchUPC app
 ---------
-Author: Torbjörn Dahléén   
+Author: Torbjörn Dahlén   
 Level: Intermediate   
 Technologies: Javascript, Cordova, RHMAP   
 Summary: A demo on how to call an MBaaS Service (SearchUPC)   
