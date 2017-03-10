@@ -26,7 +26,7 @@ document.getElementById('get_recent').onclick = function () {
       function (res) {
         //document.getElementById('cloudResponse').innerHTML = "<p>" + res[0] + "</p>";
 
-        var myTableDiv = document.getElementById("cloudResponse");
+        //var myTableDiv = document.getElementById("cloudResponse");
         var table = document.createElement('TABLE');
         var tableBody = document.createElement('TBODY');
 
@@ -41,8 +41,8 @@ document.getElementById('get_recent').onclick = function () {
           tableBody.appendChild(tr);
         }
 
-        myTableDiv.appendChild(table);
-        document.getElementById('cloudResponse').innerHTML = myTableDiv.innerHTML;
+        //myTableDiv.appendChild(table);
+        document.getElementById('cloudResponse').innerHTML = table.innerHTML;
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);
