@@ -42,7 +42,8 @@ document.getElementById('get_recent').onclick = function () {
 
         table.appendChild(tableBody);
 
-        myTableDiv = table;
+        myTableDiv.innerHTML = " ";
+        myTableDiv.appendChild(table);
 
       },
       function (code, errorprops, params) {
