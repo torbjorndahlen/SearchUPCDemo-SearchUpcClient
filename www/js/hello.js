@@ -24,7 +24,24 @@ document.getElementById('get_recent').onclick = function () {
         method: "GET"
       },
       function (res) {
-        document.getElementById('cloudResponse').innerHTML = "<p>" + res[0] + "</p>";
+        //document.getElementById('cloudResponse').innerHTML = "<p>" + res[0] + "</p>";
+
+        var myTableDiv = document.getElementById("cloudResponse");
+        var table = document.createElement('TABLE');
+        var tableBody = document.createElement('TBODY');
+
+        table.border = '1';
+        table.appendChild(tableBody);
+
+        for (i = 0; i < res.length; i++) {
+          var tr = document.createElement('TR');
+          var td = document.createElement('TD');
+          td.appendChild(document.createTextNode(res[i]));
+          tr.appendChild(td);
+          tableBody.appendChild(tr);
+        }
+
+        myTableDiv.appendChild(table);
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);
