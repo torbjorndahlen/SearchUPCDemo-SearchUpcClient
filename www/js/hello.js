@@ -42,7 +42,7 @@ document.getElementById('get_recent').onclick = function () {
         }
 
         myTableDiv.appendChild(table);
-        document.getElementById('cloudResponse').innerHTML = myTableDiv;
+        document.getElementById('cloudResponse').innerHTML = myTableDiv.innerHTML;
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);
