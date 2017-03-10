@@ -1,13 +1,12 @@
 # SearchUPC app
 ---------
-Author: Erik Jan de Wit   
+Author: Torbjörn Dahléén   
 Level: Intermediate   
 Technologies: Javascript, Cordova, RHMAP   
-Summary: A demonstration of how to use [FH JavaScript SDK](https://github.com/feedhenry/fh-js-sdk) with RHMAP.   
-Community Project: [Feed Henry](http://feedhenry.org)   
+Summary: A demo on how to call an MBaaS Service (SearchUPC)   
 Target Product: RHMAP   
-Product Versions: RHMAP 3.8.0+   
-Source: https://github.com/feedhenry-templates/sync-cordova-app   
+Product Versions: RHMAP 3.16.0
+Source:   
 Prerequisites: fh-js-sdk : 2.14.+, Cordova 5.0+   
 
 ## What is it?
