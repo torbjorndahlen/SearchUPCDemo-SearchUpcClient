@@ -26,12 +26,11 @@ document.getElementById('get_recent').onclick = function () {
       function (res) {
         //document.getElementById('cloudResponse').innerHTML = "<p>" + res[0] + "</p>";
 
-        //var myTableDiv = document.getElementById("cloudResponse");
+        var myTableDiv = document.getElementById("cloudResponse");
         var table = document.createElement('TABLE');
         var tableBody = document.createElement('TBODY');
 
         table.border = '1';
-        table.appendChild(tableBody);
 
         for (i = 0; i < res.length; i++) {
           var tr = document.createElement('TR');
@@ -41,8 +40,10 @@ document.getElementById('get_recent').onclick = function () {
           tableBody.appendChild(tr);
         }
 
-        //myTableDiv.appendChild(table);
-        document.getElementById('cloudResponse').innerHTML = table;
+        table.appendChild(tableBody);
+
+        myTableDiv.innerHTML = table;
+        
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);
