@@ -42,8 +42,8 @@ document.getElementById('get_recent').onclick = function () {
 
         table.appendChild(tableBody);
 
-        myTableDiv.innerHTML = table;
-        
+        myTableDiv = table;
+
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);
