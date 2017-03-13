@@ -8,7 +8,7 @@ document.getElementById('say_hello').onclick = function () {
         }
       },
       function (res) {
-        document.getElementById('cloudResponse').innerHTML = "<p>" + res[0].productname + "</p>";
+        document.getElementById('cloudResponse').innerHTML = "<p>" + res.productname + "</p>";
       },
       function (code, errorprops, params) {
         alert('An error occured: ' + code + ' : ' + errorprops);
